@@ -1,8 +1,11 @@
 # dual_tower
 ## requiremens
 aiocontextvars==0.2.2
+
 certifi==2021.5.30
+
 chardet==3.0.2
+
 charset-normalizer==2.0.12
 click==8.0.4
 colorama==0.4.5
