@@ -7,21 +7,37 @@ certifi==2021.5.30
 chardet==3.0.2
 
 charset-normalizer==2.0.12
+
 click==8.0.4
+
 colorama==0.4.5
+
 contextvars==2.4
+
 dataclasses @ file:///tmp/build/80754af9/dataclasses_1614363715916/work
+
 filelock==3.4.1
+
 idna==3.4
+
 immutables==0.19
+
 importlib-metadata==4.8.3
+
 importlib-resources==5.4.0
+
 joblib==1.1.1
+
 logger==1.4
+
 loguru==0.6.0
+
 mkl-fft==1.3.0
+
 mkl-random==1.1.1
+
 mkl-service==2.3.0
+
 numpy @ file:///C:/ci/numpy_and_numpy_base_1603480701039/work
 olefile==0.46
 packaging==21.3
