@@ -1,0 +1,57 @@
+{
+  "Version": "1.0",
+  "FreebaseVersion": "2015-08-09",
+  "Questions": [
+{
+      "QuestionId": "WebQTest-61",
+      "RawQuestion": "what are the religions practiced in indonesia?",
+      "ProcessedQuestion": "what are the religions practiced in indonesia",
+      "Parses": [
+        {
+          "ParseId": "WebQTest-61.P0",
+          "AnnotatorId": 0,
+          "AnnotatorComment": {
+            "ParseQuality": "Complete",
+            "QuestionQuality": "Good",
+            "Confidence": "Normal",
+            "FreeFormComment": "First-round parse verification"
+          },
+          "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.03ryn)\nns:m.03ryn ns:location.statistical_region.religions ?y .\n?y ns:location.religion_percentage.religion ?x .\n}\n",
+          "PotentialTopicEntityMention": "indonesia",
+          "TopicEntityName": "Indonesia",
+          "TopicEntityMid": "m.03ryn",
+          "InferentialChain": [
+            "location.statistical_region.religions",
+            "location.religion_percentage.religion"
+          ],
+          "Constraints": [],
+          "Time": null,
+          "Order": null,
+          "Answers": [
+            {
+              "AnswerType": "Entity",
+              "AnswerArgument": "m.03j6c",
+              "EntityName": "Hinduism"
+            },
+            {
+              "AnswerType": "Entity",
+              "AnswerArgument": "m.05sfs",
+              "EntityName": "Protestantism"
+            },
+            {
+              "AnswerType": "Entity",
+              "AnswerArgument": "m.0c8wxp",
+              "EntityName": "Catholicism"
+            },
+            {
+              "AnswerType": "Entity",
+              "AnswerArgument": "m.0flw86",
+              "EntityName": "Islam"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+    }
+

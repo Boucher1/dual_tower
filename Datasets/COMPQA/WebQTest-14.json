@@ -1,0 +1,90 @@
+{
+    "QuestionId": "WebQTest-14",
+    "question": "where is the fukushima daiichi nuclear plant located",
+    "mention": "fukushima daiichi nuclear plant",
+    "topicEntityID": "m.02vkzy2",
+    "preTopicEntityID": "m.02vkzy2",
+    "topicEntityName": "Fukushima Daiichi Nuclear Power Plant",
+    "Answers": [
+        "m.03_3d",
+        "m.03k_g5"
+    ],
+    "topicEntityType": "Disaster-affected structure",
+    "Sparql": "PREFIX ns: <http://rdf.freebase.com/ns/>\nSELECT DISTINCT ?x\nWHERE {\nFILTER (?x != ns:m.02vkzy2)\nns:m.02vkzy2 ns:location.location.containedby ?x .\n}\n",
+    "PosQueryGraph": " ns:location.location.containedby ?x .",
+    "NegQueryGraph": [
+        {
+            "path": " ns:location.location.containedby ?x .",
+            "score": "0.9763200879096985",
+            "type": 0,
+            "label": 1.0
+        },
+        {
+            "path": " ns:location.location.containedby ?y .?y ns:location.location.primarily_containedby ?x .",
+            "score": "0.9763200879096985#0.9790530204772949",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:location.location.containedby ?y .?y ns:base.locations.countries.continent ?x .",
+            "score": "0.9763200879096985#0.97691810131073",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:location.location.containedby ?y .?y ns:location.location.containedby ?x .",
+            "score": "0.9763200879096985#0.9763200879096985",
+            "type": 2,
+            "label": 0.25
+        },
+        {
+            "path": " ns:location.location.street_address ?x .",
+            "score": "0.9697839021682739",
+            "type": 0,
+            "label": 0.0
+        },
+        {
+            "path": " ns:location.location.street_address ?y .?y ns:location.mailing_address.citytown ?x .",
+            "score": "0.9697839021682739#0.9909980297088623",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:location.location.street_address ?y .?y ns:common.topic.notable_types ?x .",
+            "score": "0.9697839021682739#0.016102302819490433",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:location.location.street_address ?y .?y ns:location.mailing_address.postal_code ?x .",
+            "score": "0.9697839021682739#0.013955837115645409",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:base.infrastructure.nuclear_power_station.reactors ?x .",
+            "score": "0.022393615916371346",
+            "type": 0,
+            "label": 0.0
+        },
+        {
+            "path": " ns:base.infrastructure.nuclear_power_station.reactors ?y .?y ns:base.infrastructure.nuclear_power_plant.reactor_type ?x .",
+            "score": "0.022393615916371346#0.02020133286714554",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:base.infrastructure.nuclear_power_station.reactors ?y .?y ns:common.topic.notable_types ?x .",
+            "score": "0.022393615916371346#0.01610267162322998",
+            "type": 2,
+            "label": 0.0
+        },
+        {
+            "path": " ns:base.infrastructure.nuclear_power_station.reactors ?y .?y ns:common.topic.notable_for ?x .",
+            "score": "0.022393615916371346#0.010863177478313446",
+            "type": 2,
+            "label": 0.0
+        }
+    ],
+    "is_true": true
+}
