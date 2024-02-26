@@ -1,5 +1,5 @@
-# dual_tower
-## requiremens
+# dual_tower on KBQA
+## requirements
 aiocontextvars==0.2.2
 
 certifi==2021.5.30
